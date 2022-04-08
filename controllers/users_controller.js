@@ -62,7 +62,7 @@ module.exports.signIn = function(req,res){
         return res.redirect('/users/profile');
     }
     return res.render('user_sign_in',{
-        title : "Node-Express : Sign In"
+        title : "Codeial : Sign In"
     });
 }
 

@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 const env = require("./config/environment");
 const logger = require("morgan");
@@ -9,7 +9,7 @@ const logger = require("morgan");
 require("./config/view-helper")(app);
 
 const path = require("path");
- 
+
 //importing cookie parser
 const cookieParser = require("cookie-parser");
 
@@ -45,7 +45,7 @@ const customMware = require("./config/middleware");
 //setting chat engine
 const chatServer = require("http").Server(app);
 const chatSockets = require("./config/chat_sockets").chatSockets(chatServer);
-chatServer.listen(8000);
+chatServer.listen(5000);
 console.log("chat server is listening on port 5000");
 
 //---------------------------------------------------------------------middleware--------------------------------------------------------------------
@@ -131,4 +131,3 @@ app.listen(port, function (err) {
   }
   console.log(`server is running on port : ${port}`);
 });
-// app.listen();

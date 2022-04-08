@@ -29,7 +29,7 @@ module.exports.home = async function(req,res){
 
        
         return res.render('home',{
-            title:"Node-Express home",
+            title:"SocialArray home",
             posts : post,
             all_users : user,
             all_friends : signInUserFriends
