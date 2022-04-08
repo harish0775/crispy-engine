@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prod_start": "set NODEEXPRESS_ENVIRONMENT=production & nodemon app.js"
+    "heroku config":"set NODEEXPRESS_ENVIRONMENT=production = false"
   },
   "author": "Harsh Verma",
   "license": "ISC",
